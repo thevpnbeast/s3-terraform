@@ -33,3 +33,11 @@ variable "lock_table_name" {
   default     = "thevpnbeast-terraform-locks"
   description = "Unique name of the lock table"
 }
+
+variable "tags" {
+  description = "Tags for the networking resources"
+  type        = map(string)
+  default = {
+    project = "vpnbeast"
+  }
+}

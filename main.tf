@@ -3,12 +3,11 @@ provider "aws" {
 }
 
 locals {
-  tags = {
-    project     = "thevpnbeast"
+  local_tags = merge(var.tags, {
     responsible = "infra"
     versioning  = var.versioning_enabled
     encryption  = var.encryption_enabled
-  }
+  })
 }
 
 resource "aws_s3_bucket" "terraform_releases" {
