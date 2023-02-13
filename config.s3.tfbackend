@@ -1,4 +1,0 @@
-bucket = "thevpnbeast-terraform-states-1"
-key = "states/s3/release-bucket.tfstate"
-region = "us-east-1"
-encrypt = true

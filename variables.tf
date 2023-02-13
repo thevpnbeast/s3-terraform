@@ -6,7 +6,7 @@ variable "aws_region" {
 
 variable "bucket_name" {
   type        = string
-  default     = "thevpnbeast-releases"
+  default     = "thevpnbeast-terraform-states-1"
   description = "Unique name of the bucket"
 }
 
@@ -38,6 +38,6 @@ variable "tags" {
   description = "Tags for the networking resources"
   type        = map(string)
   default = {
-    project = "vpnbeast"
+    project = "thevpnbeast"
   }
 }
